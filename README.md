@@ -47,29 +47,8 @@ API_TARGET=http://localhost:3004
 - `GET /api/services?name=...` — список с поиском;
 - `GET /api/services/feed?id=...` — карточка при прямом открытии подробностей.
 
-## Сборка и Docker
-
-```sh
-npm run build
-npm run preview
-```
-
-Сборка проверяет TypeScript и создаёт `dist/`. Preview доступен на порту 5173.
-`dist/`, `node_modules/` и локальные переменные окружения исключены из Git.
-
-```sh
-docker compose up --build
-```
-
-Docker запускает Vite с hot reload на http://localhost:5173. Бэкенд запускается
-отдельно на компьютере; `docker-compose.yml` направляет запросы контейнера
-на `http://host.docker.internal:3000`. При другом порте бэкенда измените
-`API_TARGET` в этом compose-файле. Остановка: `docker compose down` из корня
-этого репозитория.
-
 ## Соответствие пятой лабораторной работе
 
-Методические указания: https://github.com/iu5git/Web/tree/main/tutorials/lab5
 
 | Требование | Файлы и поведение |
 |---|---|
