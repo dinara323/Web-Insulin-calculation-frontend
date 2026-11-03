@@ -59,9 +59,7 @@ API_TARGET=http://localhost:3004
 | Общий массив карточек | `src/AppLayout.tsx`, Outlet context |
 | Поиск и mock | `src/modules/mock.ts`, `src/pages/ServicesPage.tsx` |
 | Дефолтное изображение | `public/DefaultImage.jpg`, `ServiceImage.tsx` |
-| Нижняя панель | `TabBar.tsx`, активная вкладка, переход к первой карточке текущего массива |
 | Фото и видео | `DetailPage.tsx`; видео autoplay, loop, muted, playsInline; при ошибке — фото |
 | Кнопка «Далее» | Следующий элемент текущего массива; на последнем кнопка отключена |
 | Собственный API | `src/modules/servicesApi.ts`, Vite proxy |
-| Мобильная вёрстка | Колонка до 390 px, на узком экране 100%, панель закреплена снизу |
-| Docker | `Dockerfile`, `.dockerignore`, `docker-compose.yml` |
+
